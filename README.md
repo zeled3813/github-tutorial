@@ -11,14 +11,22 @@ _by **Zele Dong**_
 
 ---
 ## Initial Setup
-In order to create a github account,you'll have to do the followings,
-1. Relocate yourself to github by typing github.com in the URL
-2. 
+#### In order to create a github account,you'll have to do the followings,  
+1. Relocate yourself to github by typing github.com in the URL  
+2. Click on the SignUp Icon on the top right land side of the webpage.  
+3. Type in your own Username,Email Address,and Password.  
+4. Choose either one of the personal plan that you want.  
+5. Check off the points that you think are appropriate for yourself.  
+6. Then Click `Create Account`,now you can create a SSH key between Github and c9.  
+7. Click on settings in the top right profile icon.  
+8. Go to SSH and GPG keys by clicking on the leftsidebar.  
+9. Create a new SSH key and give it an appropriate name.  
+10. Copy the SSH key,then go to c9 and click on the top right gear icon,paste the SSH key at where it says SSH key.  
 
 
 ---
 ## Repository Setup
-In order to create,edit,and upload the files,you'll need to do the followings,  
+#### In order to create,edit,and upload the files,you'll need to do the followings,  
 1.  Create a new directory using `mkdir`.  
 2.  `cd` into the directory just created.  
 3.  Login to Github and create a new repository on Github,the name of this new repository must be the same as the directory you just created.  
