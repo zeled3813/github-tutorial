@@ -45,15 +45,15 @@ _by **Zele Dong**_
   
 #### Git Status
 * `Git Status` is used to check whether changes were made to a file within the repository.When you type and enter `Git Status` on the command line, the file name appears in red indicating the file was modified/edited,while the file name appears in green indicating the file is already added to the staging area.  
-* 
+* Before typing `git status`,you should be in the correct repository.Otherwise, move to the repository by using `cd`.When you're in the right repository,you would simplely type `git status` on the command line to check the status of the files.  
   
 #### Git Add
 * `Git Add` is used when adding a file to the staging area.When you make changes to a file,you would add the modified file to the staging area in order to commit and save it as a `snapshot`.  
-* 
+*   `git add` is only needed when you want to add modified file/files,that is not already in the staging area,to the staging area.Be sure to double check by typing `git status` on the command line,if the file names appear in red then you're free to type `git add [file name]` to add the file to staging area.  
   
 #### Git Commit
 * `git commit` is used to permanently save the files added to staging area as `snapshots`.You could always check the `snapshots` by typing `git log` on the command line.
-* 
+* When committing files in the staging area,you'll need to include a brief message that will remind yourself what you've done to the files.To do this,you type `git commit -m "Where You Type The Message"`.  
   
 #### Git Push
 * `git push` is used to upload the committed files from your local repository to the remote repository,this would help you restore the files if the file were lost in any occasion.(The remote repository would be the one you created on Github in this case)  
