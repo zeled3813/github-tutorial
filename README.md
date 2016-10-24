@@ -42,3 +42,19 @@ _by **Zele Dong**_
 
 ---
 ## Workflow & Commands
+  
+#### Git Status
+* `Git Status` is used to check whether changes were made to a file within the repository.When you type and enter `Git Status` on the command line, the file name appears in red indicating the file was modified/edited,while the file name appears in green indicating the file is already added to the staging area.  
+* 
+  
+#### Git Add
+* `Git Add` is used when adding a file to the staging area.When you make changes to a file,you would add the modified file to the staging area in order to commit and save it as a `snapshot`.  
+* 
+  
+#### Git Commit
+* `git commit` is used to permanently save the files added to staging area as `snapshots`.You could always check the `snapshots` by typing `git log` on the command line.
+* 
+  
+#### Git Push
+* `git push` is used to upload the committed files from your local repository to the remote repository,this would help you restore the files if the file were lost in any occasion.(The remote repository would be the one you created on Github in this case)  
+* When you're using `git push` for the first time,you'll need to include the remote name;origin,and the branch name;master.For instance,the correct syntax is `git push -u origin master` when making the connection between the local and remote repository,then you'll just simplely type `git push` to upload the committed files.
