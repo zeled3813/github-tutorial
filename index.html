@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Github Tutorial by zeled3813</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Github Tutorial</h1>
+      <h2 class="project-tagline">Time to Git Yourself Started</h2>
+      <a href="https://github.com/zeled3813/github-tutorial" class="btn">View on GitHub</a>
+      <a href="https://github.com/zeled3813/github-tutorial/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/zeled3813/github-tutorial/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by <strong>Zele Dong</strong></em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<ul>
+<li>
+<em>Git</em> is used to store data of folders and files as backups.</li>
+<li>
+<em>Github</em> is used to keep track of the changes made to folders and files.</li>
+<li>While <em>Github</em> requires <em>git</em> to function,<em>Git</em> does not require <em>Github</em> to function.<br>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h4>
+<a id="in-order-to-create-a-github-accountyoull-have-to-do-the-followings" class="anchor" href="#in-order-to-create-a-github-accountyoull-have-to-do-the-followings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to create a github account,you'll have to do the followings,</h4>
+
+<ol>
+<li>Relocate yourself to github by typing github.com in the URL<br>
+</li>
+<li>Click on the SignUp Icon on the top right land side of the webpage.<br>
+</li>
+<li>Type in your own Username,Email Address,and Password.<br>
+</li>
+<li>Choose either one of the personal plan that you want.<br>
+</li>
+<li>Check off the points that you think are appropriate for yourself.<br>
+</li>
+<li>Then Click <code>Create Account</code>,now you can create a SSH key between Github and c9.<br>
+</li>
+<li>Click on settings in the top right profile icon.<br>
+</li>
+<li>Go to SSH and GPG keys by clicking on the leftsidebar.<br>
+</li>
+<li>Create a new SSH key and give it an appropriate name.<br>
+</li>
+<li>Copy the SSH key,then go to c9 and click on the top right gear icon,paste the SSH key at where it says SSH key.<br>
+</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h4>
+<a id="in-order-to-createeditand-upload-the-filesyoull-need-to-do-the-followings" class="anchor" href="#in-order-to-createeditand-upload-the-filesyoull-need-to-do-the-followings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In order to create,edit,and upload the files,you'll need to do the followings,</h4>
+
+<ol>
+<li> Create a new directory using <code>mkdir</code>.<br>
+</li>
+<li> <code>cd</code> into the directory just created.<br>
+</li>
+<li> Login to Github and create a new repository on Github,the name of this new repository must be the same as the directory you just created.<br>
+</li>
+<li> After creating this new repository on Github,you'll see a quick setup provided by Github.There will be two lines of commands under "…or push an existing repository from the command line",copy the lines of commands,then paste and enter them on the command line one at a time.<br>
+</li>
+<li> Type <code>git init</code> inside of the correct folder.(This turns the directory into a repository)<br>
+</li>
+<li> Create a new file using <code>touch</code>.<br>
+</li>
+<li> Open the file with either one of the following <strong>two</strong> methods.<br>
+
+<ul>
+<li>Double click on the file in c9.<br>
+</li>
+<li>Type <code>c9 [name of the file with extensions]</code><br>
+</li>
+</ul>
+</li>
+<li>Edit/make changes to the file<br>
+</li>
+<li>Check the changes made to the file by typing <code>git status</code>.If the name of the file is in <strong>red</strong>,then you'll have to type <code>git add</code> to add it.<br>
+</li>
+<li>Once the file name appears in <strong>green</strong> in <code>git status</code>,you're free to type <code>git commit</code> to commit it.You wanna make sure to include a message,a message that reminds you want you've done to the file, to yourself or other people.<br>
+</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<h4>
+<a id="git-status" class="anchor" href="#git-status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Status</h4>
+
+<ul>
+<li>
+<code>Git Status</code> is used to check whether changes were made to a file within the repository.When you type and enter <code>Git Status</code> on the command line, the file name appears in red indicating the file was modified/edited,while the file name appears in green indicating the file is already added to the staging area.<br>
+</li>
+<li>Before typing <code>git status</code>,you should be in the correct repository.Otherwise, move to the repository using <code>cd</code>.When you're in the right repository,you would simplely type <code>git status</code> on the command line to check the status of the files.<br>
+</li>
+</ul>
+
+<h4>
+<a id="git-add" class="anchor" href="#git-add" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Add</h4>
+
+<ul>
+<li>
+<code>Git Add</code> is used when adding a file to the staging area.When you make changes to a file,you would add the modified file to the staging area in order to commit and save it as a <code>snapshot</code>.<br>
+</li>
+<li>  <code>git add</code> is only needed when you want to add modified file/files,that is not already in the staging area,to the staging area.Be sure to double check by typing <code>git status</code> on the command line,if the file names appear in red then you're free to type <code>git add [file name]</code> to add the file to staging area.<br>
+</li>
+</ul>
+
+<h4>
+<a id="git-commit" class="anchor" href="#git-commit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Commit</h4>
+
+<ul>
+<li>
+<code>git commit</code> is used to permanently save the files added to staging area as <code>snapshots</code>.You could always check the <code>snapshots</code> by typing <code>git log</code> on the command line.</li>
+<li>When committing files in the staging area,you'll need to include a brief message that will remind yourself what you've done to the files.To do this,you type <code>git commit -m "Where You Type The Message"</code>.<br>
+</li>
+</ul>
+
+<h4>
+<a id="git-push" class="anchor" href="#git-push" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Push</h4>
+
+<ul>
+<li>
+<code>git push</code> is used to upload the committed files from your local repository to the remote repository,this would help you restore the files if the file were lost in any occasion.(The remote repository would be the one you created on Github in this case)<br>
+</li>
+<li>When you're using <code>git push</code> for the first time,you'll need to include the remote name;origin,and the branch name;master.For instance,the correct syntax is <code>git push -u origin master</code> when making the connection between the local and remote repository,then you'll just simplely type <code>git push</code> to upload the committed files.<br>
+</li>
+</ul>
+
+<h2>
+<a id="extra-credit" class="anchor" href="#extra-credit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>Extra Credit</em>
+</h2>
+
+<h5>
+<a id="questionwhat-to-do-if-you-did-init-in-the-wrong-directory" class="anchor" href="#questionwhat-to-do-if-you-did-init-in-the-wrong-directory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Question:What to do if you did <code>init</code> in the wrong directory?</h5>
+
+<p>When you accidentally initialized a repository in the wrong directory,you could simplely type <code>rm -r .git</code> in the repository to remove the repository.  </p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/zeled3813/github-tutorial">Github Tutorial</a> is maintained by <a href="https://github.com/zeled3813">zeled3813</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
